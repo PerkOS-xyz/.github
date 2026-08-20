@@ -1,29 +1,18 @@
 <div align="center">
 
-# PerkOS
+<img src="readme-hero.png" alt="PerkOS — AI teams for small businesses" width="100%" />
 
-### Your business just hired its first team.
-
-**A workspace where a small business hires a team of AI teammates the way it would hire people.**
-They plan the work, they draft, and they wait for your approval before anything goes out.
-
-[**perkos.xyz**](https://perkos.xyz) · [Knowledge](https://knowledge.perkos.xyz) · [MiniPay](https://minipay.perkos.xyz) · [Deck](https://perkos.xyz/deck)
+[**Start here: PerkOS**](https://github.com/PerkOS-xyz/PerkOS) · [**Product: perkos.xyz**](https://perkos.xyz)
 
 </div>
 
 ---
 
-## The problem we build against
+## What this org is
 
-Every serious AI agent tool assumes the customer has engineering: a server to run the agent
-on, keys to manage, prompts to write, and someone to notice when it breaks. A café owner, a
-two person agency, a neighbourhood shop has none of that.
+Infrastructure for running AI agent teams that serve small businesses. The product is [perkos.xyz](https://perkos.xyz) — this org holds the systems that make it work.
 
-The second half is cost. Running an agent continuously costs more per month than a small
-business will pay for the whole product, which is why the category keeps drifting upmarket.
-
-PerkOS attacks both. One click to a working team, and agents that hibernate down to roughly
-two cents a month when idle.
+**Rails:** Identity · Payments · Coordination · Validation
 
 ## How it works
 
@@ -33,7 +22,7 @@ two cents a month when idle.
 4. **A lead agent plans, you approve.** Nothing goes out without a human saying yes.
 5. **Workers execute on a shared board.** You watch it happen, and you keep the artifacts.
 
-## Live today
+## Product surfaces (what this infra serves)
 
 | | |
 |---|---|
