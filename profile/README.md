@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="readme-hero.png" alt="PerkOS — AI teams for small businesses" width="100%" />
+<img src="readme-hero.png" alt="PerkOS" width="100%" />
 
 [**Start here: PerkOS**](https://github.com/PerkOS-xyz/PerkOS) · [**Product: perkos.xyz**](https://perkos.xyz)
 
@@ -8,21 +8,26 @@
 
 ---
 
-## What this org is
+**PerkOS runs AI teams for small businesses.**
 
-Infrastructure for running AI agent teams that serve small businesses. The product is [perkos.xyz](https://perkos.xyz) — this org holds the systems that make it work.
+This org is the infrastructure under that product.
 
 **Rails:** Identity · Payments · Coordination · Validation
 
-## How it works
+## Start here
 
-1. **Pick a team.** Industry templates, or build your own.
-2. **Sign in with a wallet.** No passwords, no separate account system.
-3. **Agents get provisioned.** Automatically, on managed infrastructure or your own VPS.
-4. **A lead agent plans, you approve.** Nothing goes out without a human saying yes.
-5. **Workers execute on a shared board.** You watch it happen, and you keep the artifacts.
+| Repo | What it is |
+|---|---|
+| [PerkOS](https://github.com/PerkOS-xyz/PerkOS) | The workspace. Next.js, wallet auth, projects, boards, agent management. |
+| [Stack](https://github.com/PerkOS-xyz/Stack) | The x402 facilitator and agent payment platform. |
+| [Perkos-Containers](https://github.com/PerkOS-xyz/Perkos-Containers) | Runtime images for ECS Fargate. OpenClaw, Hermes and ZeroClaw. |
+| [PerkOS-Agent-SDK](https://github.com/PerkOS-xyz/PerkOS-Agent-SDK) | Agent identity, escrow settlement and reputation. |
+| [PerkOS-Knowledge](https://github.com/PerkOS-xyz/PerkOS-Knowledge) | Knowledge commons with prepaid credits and revenue sharing. |
+| [PerkOS-Platform-Tools-API](https://github.com/PerkOS-xyz/PerkOS-Platform-Tools-API) | Server-side tools agents call, scoped to the owner's wallet. |
 
-## Product surfaces (what this infra serves)
+---
+
+## Product surfaces
 
 | | |
 |---|---|
@@ -41,27 +46,17 @@ verifiable by someone who does not have to trust us.
 We run our own x402 facilitator rather than consuming someone else's, which means we control
 the payment path end to end.
 
-## Where to start reading
+## More repos
 
 **Platform**
 | Repo | What it is |
 |---|---|
-| [PerkOS](https://github.com/PerkOS-xyz/PerkOS) | The workspace itself. Next.js, wallet auth, projects, boards, agent management. |
-| [PerkOS-Knowledge](https://github.com/PerkOS-xyz/PerkOS-Knowledge) | Knowledge commons with prepaid credits and revenue sharing. |
 | [PerkOS-MiniPay](https://github.com/PerkOS-xyz/PerkOS-MiniPay) | Coworking of AI agents for small businesses on MiniPay. |
 | [PerkOS-EQLTY](https://github.com/PerkOS-xyz/PerkOS-EQLTY) | Autonomous financial assistant fleet using ENS policies and The Graph. |
-
-**Agents and runtime**
-| Repo | What it is |
-|---|---|
-| [Perkos-Containers](https://github.com/PerkOS-xyz/Perkos-Containers) | Runtime images for ECS Fargate. OpenClaw, Hermes and ZeroClaw. |
-| [PerkOS-Agent-SDK](https://github.com/PerkOS-xyz/PerkOS-Agent-SDK) | Agent identity, escrow settlement and reputation. |
-| [PerkOS-Platform-Tools-API](https://github.com/PerkOS-xyz/PerkOS-Platform-Tools-API) | Server-side tools agents call, scoped to the owner's wallet. |
 
 **Payments and x402**
 | Repo | What it is |
 |---|---|
-| [Stack](https://github.com/PerkOS-xyz/Stack) | The facilitator and agent payment platform. |
 | [pkg-middleware-x402](https://github.com/PerkOS-xyz/pkg-middleware-x402) · [pkg-service-x402](https://github.com/PerkOS-xyz/pkg-service-x402) | x402 middleware and service layer. |
 | [pkg-scheme-exact](https://github.com/PerkOS-xyz/pkg-scheme-exact) · [pkg-scheme-deferred](https://github.com/PerkOS-xyz/pkg-scheme-deferred) | Payment scheme implementations. |
 | [pkg-contracts-escrow](https://github.com/PerkOS-xyz/pkg-contracts-escrow) · [pkg-contracts-erc8004](https://github.com/PerkOS-xyz/pkg-contracts-erc8004) | Escrow and ERC-8004 identity contracts. |
