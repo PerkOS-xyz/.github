@@ -14,6 +14,15 @@ Infrastructure for running AI agent teams that serve small businesses. The produ
 
 **Rails:** Identity · Payments · Coordination · Validation
 
+## Activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PerkOS-xyz/.github/activity/activity-dark.svg">
+  <img alt="Commits across PerkOS repositories in the last year, with weekly strips for the main public repositories" src="https://raw.githubusercontent.com/PerkOS-xyz/.github/activity/activity-light.svg">
+</picture>
+
+<sub>Public repositories, updated daily with <a href="https://github.com/JulioMCruz/org-activity-graph">org-activity-graph</a>.</sub>
+
 ## How it works
 
 1. **Pick a team.** Industry templates, or build your own.

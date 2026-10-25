@@ -1,0 +1,35 @@
+# Redraws the organization activity graph every day and publishes the SVGs
+# to the "activity" branch, which profile/README.md shows. Built with
+# https://github.com/JulioMCruz/org-activity-graph.
+name: Activity graph
+
+on:
+  schedule:
+    - cron: "17 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  graph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: JulioMCruz/org-activity-graph@v1
+        with:
+          org: PerkOS-xyz
+          repos: PerkOS,Perkos-Containers,PerkOS-Platform-Tools-API,PerkOS-Knowledge,Stack,PerkOS-Shared-Types
+          timezone: America/New_York
+          output-dir: dist
+
+      - name: Publish to the activity branch
+        working-directory: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git init -q -b activity
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -q -m "Update activity graph"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" activity
