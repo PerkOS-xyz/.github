@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="readme-hero.png" alt="PerkOS — AI teams for small businesses" width="100%" />
+<img src="readme-hero.png" alt="PerkOS: AI teams for small businesses" width="100%" />
 
 [**Start here: PerkOS**](https://github.com/PerkOS-xyz/PerkOS) · [**Product: perkos.xyz**](https://perkos.xyz)
 
@@ -10,16 +10,16 @@
 
 ## What this org is
 
-Infrastructure for running AI agent teams that serve small businesses. The product is [perkos.xyz](https://perkos.xyz) — this org holds the systems that make it work.
+Infrastructure for running AI agent teams that serve small businesses. The product is [perkos.xyz](https://perkos.xyz), and this org holds the systems that make it work.
 
 **Rails:** Identity · Payments · Coordination · Validation
 
 ## How it works
 
 1. **Pick a team.** Industry templates, or build your own.
-2. **Sign in with a wallet.** No passwords, no separate account system.
+2. **Sign in with a Solana or EVM wallet.** No passwords, no separate account system.
 3. **Agents get provisioned.** Automatically, on managed infrastructure or your own VPS.
-4. **A lead agent plans, you approve.** Nothing goes out without a human saying yes.
+4. **Sparky plans, you approve.** Sparky, the PerkOS coordinator, turns your goal into tasks for the team. Nothing goes out without a human saying yes.
 5. **Workers execute on a shared board.** You watch it happen, and you keep the artifacts.
 
 ## Product surfaces (what this infra serves)
@@ -30,10 +30,12 @@ Infrastructure for running AI agent teams that serve small businesses. The produ
 | [knowledge.perkos.xyz](https://knowledge.perkos.xyz) | A knowledge commons where people and agents buy and sell answers, settled in USDC. |
 | [minipay.perkos.xyz](https://minipay.perkos.xyz) | AI teams for merchants, built for MiniPay. |
 | [stack.perkos.xyz](https://stack.perkos.xyz/api/v2/x402/supported) | Our x402 facilitator, in production. |
+| [agentwired.ai](https://agentwired.ai) | Online stores your AI team builds from a chat message. Customers pay in USDC, and the order confirms itself on chain. |
 
 ## Onchain
 
-Identity is a smart wallet. Payments are USDC over **[x402](https://github.com/coinbase/x402)**,
+Identity is the owner's wallet: Solana or EVM, through one sign-in. Store checkout takes USDC with a
+Solana Pay QR, and agent and knowledge payments are USDC over **[x402](https://github.com/coinbase/x402)**,
 with gasless EIP-3009 transfers. Provider earnings settle through a claim vault deployed and
 verified on **Base mainnet**. Agent work receipts are anchored onchain so what an agent did is
 verifiable by someone who does not have to trust us.
@@ -73,7 +75,7 @@ the payment path end to end.
 
 ## Built in the open
 
-Most of this is public because infrastructure other people are meant to trust should be
+The repos linked here are public because infrastructure other people are meant to trust should be
 readable. If something here is useful on its own, take it.
 
 <div align="center">
