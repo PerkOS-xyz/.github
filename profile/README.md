@@ -23,7 +23,7 @@ Infrastructure for running AI agent teams that serve small businesses. The produ
 </picture>
 </a>
 
-<sub>Public and private repositories, updated daily with <a href="https://github.com/JulioMCruz/org-activity-graph">org-activity-graph</a>. Private ones add to the totals without being named. Click the graph to see each day's count.</sub>
+<sub>Public and private repositories, updated hourly with <a href="https://github.com/JulioMCruz/org-activity-graph">org-activity-graph</a>. Private ones add to the totals without being named. Click the graph to see each day's count.</sub>
 
 ## How it works
 

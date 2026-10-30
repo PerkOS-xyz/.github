@@ -1,11 +1,11 @@
-# Redraws the organization activity graph every day and publishes the SVGs
+# Redraws the organization activity graph every hour and publishes the SVGs
 # to the "activity" branch, which profile/README.md shows. Built with
 # https://github.com/JulioMCruz/org-activity-graph.
 name: Activity graph
 
 on:
   schedule:
-    - cron: "17 10 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -22,6 +22,8 @@ jobs:
           # work to the daily totals. Without it only public repositories count.
           token: ${{ secrets.ORG_ACTIVITY_TOKEN || github.token }}
           include-private: ${{ secrets.ORG_ACTIVITY_TOKEN != '' }}
+          # One combined "Private repositories" strip, with no names.
+          private-strip: ${{ secrets.ORG_ACTIVITY_TOKEN != '' }}
           # Kept in a secret so private repository names stay out of the public run log.
           exclude-repos: ${{ secrets.ORG_ACTIVITY_EXCLUDE_REPOS }}
           repos: PerkOS,Perkos-Containers,PerkOS-Platform-Tools-API,PerkOS-Knowledge,Stack,PerkOS-Shared-Types
