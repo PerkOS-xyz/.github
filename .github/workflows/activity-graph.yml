@@ -18,6 +18,12 @@ jobs:
       - uses: JulioMCruz/org-activity-graph@v1
         with:
           org: PerkOS-xyz
+          # A read-only token for the organization's repositories adds private
+          # work to the daily totals. Without it only public repositories count.
+          token: ${{ secrets.ORG_ACTIVITY_TOKEN || github.token }}
+          include-private: ${{ secrets.ORG_ACTIVITY_TOKEN != '' }}
+          # Kept in a secret so private repository names stay out of the public run log.
+          exclude-repos: ${{ secrets.ORG_ACTIVITY_EXCLUDE_REPOS }}
           repos: PerkOS,Perkos-Containers,PerkOS-Platform-Tools-API,PerkOS-Knowledge,Stack,PerkOS-Shared-Types
           timezone: America/New_York
           output-dir: dist

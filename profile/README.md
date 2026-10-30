@@ -16,12 +16,14 @@ Infrastructure for running AI agent teams that serve small businesses. The produ
 
 ## Activity
 
+<a href="https://raw.githubusercontent.com/PerkOS-xyz/.github/activity/activity.svg">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PerkOS-xyz/.github/activity/activity-dark.svg">
   <img alt="Commits across PerkOS repositories in the last year, with weekly strips for the main public repositories" src="https://raw.githubusercontent.com/PerkOS-xyz/.github/activity/activity-light.svg">
 </picture>
+</a>
 
-<sub>Public repositories, updated daily with <a href="https://github.com/JulioMCruz/org-activity-graph">org-activity-graph</a>.</sub>
+<sub>Public and private repositories, updated daily with <a href="https://github.com/JulioMCruz/org-activity-graph">org-activity-graph</a>. Private ones add to the totals without being named. Click the graph to see each day's count.</sub>
 
 ## How it works
 
