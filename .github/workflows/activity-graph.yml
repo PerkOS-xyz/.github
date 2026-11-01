@@ -28,6 +28,9 @@ jobs:
           exclude-repos: ${{ secrets.ORG_ACTIVITY_EXCLUDE_REPOS }}
           repos: PerkOS,Perkos-Containers,PerkOS-Platform-Tools-API,PerkOS-Knowledge,Stack,PerkOS-Shared-Types
           timezone: America/New_York
+          # Colors follow the seasons and holidays, and the year lights up on load.
+          palette: seasonal
+          animate: true
           output-dir: dist
 
       - name: Publish to the activity branch
