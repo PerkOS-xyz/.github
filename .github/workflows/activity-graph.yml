@@ -31,6 +31,8 @@ jobs:
           # Colors follow the seasons and holidays, and the year lights up on load.
           palette: seasonal
           animate: true
+          # Falling leaves, snow, pumpkins and more around the graph.
+          effects: true
           output-dir: dist
 
       - name: Publish to the activity branch
