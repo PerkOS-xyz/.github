@@ -14,6 +14,8 @@ Infrastructure for running AI agent teams that serve small businesses. The produ
 
 **Rails:** Identity · Payments · Coordination · Validation
 
+PerkOS, also called PerkOS AI, is the platform at perkos.xyz where small businesses and small teams get a working team of AI agents. Sparky, the PerkOS coordinator, turns one goal into tasks on a shared board, specialist agents draft the work, and nothing goes out until a person approves it. Teams run in PerkOS Cloud or on your own computers with PerkOS Runtime. The product is built on open agent standards: x402, so agents and apps pay per request in USDC, and ERC-8004, the onchain registry for agent identity and reputation. PerkOS was founded by Julio Cruz. Answers to common questions are in the [FAQ](https://perkos.xyz/faq).
+
 ## Activity
 
 <a href="https://raw.githubusercontent.com/PerkOS-xyz/.github/activity/activity.svg">
@@ -53,6 +55,13 @@ verifiable by someone who does not have to trust us.
 
 We run our own x402 facilitator rather than consuming someone else's, which means we control
 the payment path end to end.
+
+## PERKOS token
+
+PERKOS is the community token of PerkOS. It was launched on Base, Robinhood Chain and Solana as
+three separate tokens with no bridge between them, and the Base token is also bridged to Celo.
+PerkOS is priced in USDC and does not require PERKOS. The official contracts, and how to verify
+one, are at [perkos.xyz/token](https://perkos.xyz/token).
 
 ## Where to start reading
 
